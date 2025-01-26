@@ -7,7 +7,7 @@
 			color: brown;
 		}
 
-		input {
+		input, select {
 			border: solid 2px rgb(50, 173, 12);
 			margin-top: 10px;
 			height: 40px;
@@ -19,6 +19,8 @@
 			padding: 10 10 10 10;
 			margin: auto;
 		}
+
+		
 	</style>
 </head>
 
@@ -47,6 +49,45 @@
 			<br>
 			<fieldset>
 				<legend>Endereço Fiscal</legend>
+				<input 
+					placeholder="Digite o CEP da sua empresa" 
+					type="text" 
+					name="cep" 
+					id="identity_cep">
+				<select name="uf" id="identity_uf">
+					<option value="PA">PARÁ</option>
+					<option value="AM">AMAZONAS</option>
+					<option value="SP">SÃO PAULO</option>
+				</select>
+				<input 
+					placeholder="Digite a cidade da sua empresa" 
+					type="text" 
+					name="cidade" 
+					id="identity_cidade">
+				
+				<input 
+					placeholder="Digite o bairro onde fica sua empresa" 
+					type="text" 
+					name="bairro" 
+					id="identity_bairro">
+				
+				<input 
+					placeholder="Digite o logradouro da sua empresa" 
+					type="text" 
+					name="logradouro" 
+					id="identity_logradouro">
+				
+				<input 
+					placeholder="Digite o número da empresa" 
+					type="text" 
+					name="numero" 
+					id="identity_numero">
+
+				<input 
+					placeholder="Digite o complemento" 
+					type="text" 
+					name="complemento" 
+					id="identity_complemento">
 			</fieldset>
 			<input type="submit" value="CADASTRAR">
 		</form>
