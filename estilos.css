@@ -1,0 +1,28 @@
+p {
+    color: brown;
+}
+
+input, select {
+    border: solid 2px rgb(50, 173, 12);
+    margin-top: 10px;
+    height: 40px;
+    width: 100%;
+}
+
+fieldset {margin-top: 30px;}
+
+.container {
+    border: solid 1px black;
+    padding: 10 10 10 10;
+    margin: auto;
+}
+
+.menu {
+    display: flex;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    margin-left: 20px;
+}
