@@ -1,10 +1,59 @@
 <html>
 <head>
 	<title>Estudos GIT</title>
+
+	<style>
+		p {
+			color: brown;
+		}
+
+		input {
+			border: solid 2px rgb(50, 173, 12);
+			margin-top: 10px;
+			height: 40px;
+			width: 100%;
+		}
+
+		.container {
+			border: solid 1px black;
+			padding: 10 10 10 10;
+			margin: auto;
+		}
+	</style>
 </head>
 
 <body>
-	<p>Estudos GIT, lets rock !!</p>
-	<p>Esta página irá reunir os principais comandos GIT e seus conceitos.</p>
+	<!-- 
+	Razão Social, Nome Fantasia, CNPJ, 
+	Endereço (CEP, Cidade, Estado, Bairro, Logradouro, Numero e Complemento), 
+	Telefone Principal, Telefone Atendimento, Incrição Municipal,
+	Inscrição Estadual, Valor de Mercado 
+	-->
+	<div class="container">
+		<form action="index.html">
+			<fieldset>
+				<legend>Dados Gerais</legend>
+				<input
+					placeholder="Digite a Razão Social" 
+					type="text" 
+					id="identity_razao_social" 
+					name="razao_social">
+				<input 
+					placeholder="Digite o Nome Fantasia" 
+					type="text" 
+					id="identity_nome_fantasia" 
+					name="nome_fantasia">
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Endereço Fiscal</legend>
+			</fieldset>
+			<input type="submit" value="CADASTRAR">
+		</form>
+	</div>
 </body>
+
+<footer>
+
+</footer>
 </html>
