@@ -1,0 +1,121 @@
+<html>
+<head>
+	<title>Sistema de gerenciamento de clientes</title>
+
+	<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+	<div class="menu">
+		<ul>
+			<li>
+				<a href="index.html">Página inicial</a>	
+			</li>
+			<li>
+				<a href="cad_cliente.html">Cadastro de Clientes</a>	
+			</li>
+			<li>
+				<a href="cad_fornecedor.html">Cadastro de Fornecedores</a>
+			</li>
+			<li>
+				<a href="cad_distribuidor.html">Cadastro de Distribuidores</a>
+			</li>
+		</ul>
+	</div>
+	<div class="container">
+		<h2>Formulário de Cadastro de Clientes</h2>
+		<form action="index.html">
+			<fieldset>
+				<legend>Dados Gerais</legend>
+				<input
+					placeholder="Digite a Razão Social" 
+					type="text" 
+					id="identity_razao_social" 
+					name="razao_social">
+				<input 
+					placeholder="Digite o Nome Fantasia" 
+					type="text" 
+					id="identity_nome_fantasia" 
+					name="nome_fantasia">
+				<input 
+					placeholder="Digite o Telefone Principal" 
+					type="tel" 
+					id="identity_tel_principal" 
+					name="tel_principal">
+				<input 
+					placeholder="Digite o Email principal" 
+					type="email"
+					id="identity_email_principal" 
+					name="email_principal">
+			</fieldset>
+			
+			<fieldset>
+				<legend>Endereço Fiscal</legend>
+				<input 
+					placeholder="Digite o CEP da sua empresa" 
+					type="text" 
+					name="cep" 
+					id="identity_cep">
+				<select name="uf" id="identity_uf">
+					<option value="PA">PARÁ</option>
+					<option value="AM">AMAZONAS</option>
+					<option value="SP">SÃO PAULO</option>
+				</select>
+				<input 
+					placeholder="Digite a cidade da sua empresa" 
+					type="text" 
+					name="cidade" 
+					id="identity_cidade">
+				<input 
+					placeholder="Digite o bairro onde fica sua empresa" 
+					type="text" 
+					name="bairro" 
+					id="identity_bairro">
+				<input 
+					placeholder="Digite o logradouro da sua empresa" 
+					type="text" 
+					name="logradouro" 
+					id="identity_logradouro">
+				<input 
+					placeholder="Digite o número da empresa" 
+					type="text" 
+					name="numero" 
+					id="identity_numero">
+				<input 
+					placeholder="Digite o complemento" 
+					type="text" 
+					name="complemento" 
+					id="identity_complemento">
+			</fieldset>
+
+			<fieldset>
+				<legend>Dados Tributários</legend>
+				<input 
+					placeholder="Digite a Inscrição Municipal" 
+					type="text" 
+					id="identity_insc_municipal" 
+					name="isnc_municipal">
+				<input 
+					placeholder="Digite a Inscrição Estadual" 
+					type="text" 
+					id="identity_insc_estadual" 
+					name="isnc_estadual">
+				<input 
+					placeholder="Digite Capital Social" 
+					type="text" 
+					id="identity_capital_social" 
+					name="capital_social">
+				<select name="regime_tributario" id="identity_regime_tributario">
+					<option value="simples_nacional">Simples Nacional</option>
+					<option value="lucro_presumido">Lucro Presumido</option>
+				</select>
+			</fieldset>
+			<input type="submit" value="CADASTRAR">
+		</form>
+	</div>
+</body>
+
+<footer>
+
+</footer>
+</html>
