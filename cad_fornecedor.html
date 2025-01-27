@@ -24,6 +24,202 @@
 	</div>
 	<div class="container">
 		<h2>Formulário de Cadastro de Fornecedores</h2>
+		<form action="cad_fornecedor.html">
+			<fieldset>
+				<legend>Dados do Fornecedor</legend>
+				<input
+					placeholder="Digite a Razão Social" 
+					type="text" 
+					id="identity_razao_social" 
+					name="razao_social">
+				<input
+					placeholder="Digite o nome fantasia (se huver)" 
+					type="text" 
+					id="identity_nome_fantasia" 
+					name="nome_fantasia">
+				<input
+					placeholder="Digite o CNPJ" 
+					type="text" 
+					id="identity_cnpj" 
+					name="cnpj">
+				<input
+					placeholder="Digite a Razão Social" 
+					type="text" 
+					id="identity_razao_social" 
+					name="razao_social">
+				<input
+					placeholder="Digite a incrição Municipal (se aplicável)" 
+					type="text" 
+					id="identity_inscicao_Municipal" 
+					name="inscricao_estadual">
+			</fieldset>
+
+			<fieldset>
+				<legend>Informações de contato</legend>
+				<input 
+					placeholder="Digite o CEP da sua empresa" 
+					type="text" 
+					name="cep" 
+					id="identity_cep">
+				<select name="uf" id="identity_uf">
+					<option value="AC">ACRE</option>
+					<option value="AL">ALAGOAS</option>
+					<option value="AP">AMAPÁ</option>
+					<option value="AM">AMAZONAS</option>
+					<option value="BA">BAHIA</option>
+					<option value="CE">CEARÁ</option>
+					<option value="DF">DISTRITO FEDERAL</option>
+					<option value="ES">ESPÍRITO SANTO</option>
+					<option value="GO">GOIÁS</option>
+					<option value="MA">MARANHÃO</option>
+					<option value="MT">MATO GROSSO</option>
+					<option value="MS">MATO GROSSO DO SUL</option>
+					<option value="MG">MINAS GERAIS</option>
+					<option value="PA">PARÁ</option>
+					<option value="PB">PARAÍBA</option>
+					<option value="PR">PARANÁ</option>
+					<option value="PE">PERNAMBUCO</option>
+					<option value="PI">PIAUÍ</option>
+					<option value="RJ">RIO DE JANEIRO</option>
+					<option value="RN">RIO GRANDE DO NORTE</option>
+					<option value="RS">RIO GRANDE SO SUL</option>
+					<option value="RO">RONDÔNIA</option>
+					<option value="RR">RORAIMA</option>
+					<option value="SC">SANTA CATARINA</option>
+					<option value="SP">SÃO PAULO</option>
+					<option value="SE">SERGIPE</option>
+					<option value="TO">TOCANTINS</option>
+				</select>
+				<input 
+					placeholder="Digite a cidade da sua empresa" 
+					type="text" 
+					name="cidade" 
+					id="identity_cidade">
+				<input 
+					placeholder="Digite o bairro onde fica sua empresa" 
+					type="text" 
+					name="bairro" 
+					id="identity_bairro">
+				<input 
+					placeholder="Digite o logradouro da sua empresa" 
+					type="text" 
+					name="logradouro" 
+					id="identity_logradouro">
+				<input 
+					placeholder="Digite o número da empresa" 
+					type="text" 
+					name="numero" 
+					id="identity_numero">
+				<input 
+					placeholder="Digite o complemento" 
+					type="text" 
+					name="complemento" 
+					id="identity_complemento">
+				<input 
+					placeholder="Digite o e-mail principal da empresa"
+					type="email" 
+					name="email_principal" 
+					id="identity_email_principal">
+				<input 
+					placeholder="Digite o website (se houver)" 
+					type="text" 
+					name="website" 
+					id="identity_website">
+			</fieldset>
+
+			<fieldset>
+				<legend>Informações financeiras</legend>
+				<input 
+					placeholder="Digite o nome do banco principal"
+					type="text"
+					name="banco_principal"
+					id="identity_banco_principal">
+				<input 
+					placeholder="Digite o código do banco"
+					type="text" 
+					name="codigo_banco" 
+					id="identity_codigo_banco">
+				<input 
+					placeholder="Agência bancária"
+					type="text" 
+					name="agencia" 
+					id="identity_agencia">
+				<input 
+					placeholder="Digite o tipo de conta"
+					type="text" 
+					name="tipo_conta" 
+					id="identity_tipo_conta">
+				<input 
+					placeholder="Digite o número da conta"
+					type="text" 
+					name="numero_conta" 
+					id="identity_numero_conta">
+				<select name="uf" id="identity_uf">
+					<option value="BLT">BOLETO BANCÁRIO</option>
+					<option value="TB">TRANSFERÊNCIA BANCÁRIA</option>
+					<option value="CD">CARTÃO DE CRÉDITO</option>
+					<option value="PIX">PIX</option>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<legend>Pessoa de contato</legend>
+				<input 
+					placeholder="Digite o nome do responsável da negociação"
+					type="text" 
+					name="nome_responsavel" 
+					id="identity_nome_reponsavel">
+				<input 
+					placeholder="Cargo ou função"
+					type="text" 
+					name="cargo" 
+					id="identity_cargo">
+				<input 
+					placeholder="Telefone de contato com DDD"
+					type="tel" 
+					name="contato_responsavel" 
+					id="identity_contato_responsavel">
+				<input 
+					placeholder="E-mail do responsável"
+					type="text" 
+					name="email_responsavel" 
+					id="identity_email_reponsavel">
+			</fieldset>
+
+			<fieldset>
+				<legend>Produtos ou serviços fornecidos</legend>
+				<input 
+					placeholder="Descrição dos produtos e serviços fornecidos"
+					type="text" 
+					name="produtos_servicos" 
+					id="identity_produtos_servicos">
+				<input 
+					placeholder="Categoria dos produtos (se houver)"
+					type="text" 
+					name="categoria_produtos" 
+					id="identity_categoria_produtos">
+			</fieldset>
+
+			<fieldset>
+				<legend>Condições comenrciais</legend>
+				<input 
+					placeholder="Prazo de entrega"
+					type="text" 
+					name="prazo_entrega" 
+					id="identity_prazo_entrega">
+				<input 
+					placeholder="Condições de pagamento (à vista ou parcelado)"
+					type="text" 
+					name="condicoes_pagamento" 
+					id="identity_condicoes_pagamento">
+				<input 
+					placeholder="Políticas de devolução ou garantia"
+					type="text" 
+					name="devolucao_garantia" 
+					id="identity_devolucao_garantia">
+			</fieldset>
+			<input type="submit" value="CADASTRAR">
+		</form>
 	</div>
 </body>
 
