@@ -4,7 +4,6 @@
 
 	<link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
 	<div class="menu">
 		<ul>
@@ -24,7 +23,7 @@
 	</div>
 	<div class="container">
 		<h2>Formulário de Cadastro de Clientes</h2>
-		<form action="index.html">
+		<form id="form_cliente">
 			<fieldset>
 				<legend>Dados Gerais</legend>
 				<input
@@ -138,7 +137,21 @@
 		</form>
 	</div>
 </body>
+<script>
+	// // -- obtem o ELEMENTO do formulário
+	let formularioCliente = document.querySelector("#form_cliente");
+	// // -- adiciono o evento para ouvir o submit do formulário
+	formularioCliente.addEventListener("submit", function(event){
+		event.preventDefault();
 
+		let cliente = {
+			razao_social: document.getElementById("identity_razao_social").value,
+			nome_fantasia: document.getElementById("identity_nome_fantasia").value
+		};
+		
+		console.log(cliente)
+	});
+</script>
 <footer>
 
 </footer>
